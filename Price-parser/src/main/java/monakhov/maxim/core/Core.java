@@ -10,7 +10,7 @@ import java.io.File;
 import java.util.LinkedList;
 
 
-public class Main {
+public class Core {
 
     LinkedList<Diapason> diapasons;
     String excelDocument;
