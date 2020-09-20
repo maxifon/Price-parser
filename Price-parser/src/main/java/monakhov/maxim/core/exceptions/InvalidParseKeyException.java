@@ -1,4 +1,4 @@
-package monakhov.maxim.core.customExceptions;
+package monakhov.maxim.core.exceptions;
 
 
 public class InvalidParseKeyException extends RuntimeException {

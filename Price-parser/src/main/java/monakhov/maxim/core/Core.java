@@ -1,8 +1,9 @@
 package monakhov.maxim.core;
 
-import monakhov.maxim.core.customExceptions.FileDoesntExistException;
-import monakhov.maxim.core.customExceptions.NotAFileException;
-import monakhov.maxim.core.customExceptions.NotEnoughRootsException;
+import monakhov.maxim.core.base.Diapason;
+import monakhov.maxim.core.exceptions.FileDoesntExistException;
+import monakhov.maxim.core.exceptions.NotAFileException;
+import monakhov.maxim.core.exceptions.NotEnoughRootsException;
 import org.apache.commons.validator.routines.UrlValidator;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 

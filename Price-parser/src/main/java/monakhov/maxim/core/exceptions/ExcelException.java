@@ -1,8 +1,8 @@
-package monakhov.maxim.core.customExceptions;
+package monakhov.maxim.core.exceptions;
 
 
 
-public abstract class ExcelException extends RuntimeException {
+public class ExcelException extends RuntimeException {
 
 
     public ExcelException() {
