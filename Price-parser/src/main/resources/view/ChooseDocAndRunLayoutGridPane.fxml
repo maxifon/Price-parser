@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="1206.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab closable="false" text="Choose document and  run">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox layoutX="134.0" layoutY="134.0" prefHeight="874.0" prefWidth="1206.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="874.0" prefWidth="600.0" style="-fx-border-color: green;">
+                           <children>
+                              <GridPane prefHeight="270.0" prefWidth="595.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="300.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" prefWidth="280.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="0.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="99.0" minHeight="-Infinity" prefHeight="61.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="99.0" minHeight="-Infinity" prefHeight="47.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="100.0" minHeight="-Infinity" prefHeight="44.0" />
+                                    <RowConstraints prefHeight="1.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Configuration file">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane GridPane.rowIndex="2">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <RadioButton mnemonicParsing="false" text="By default">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="chooseConfigFile" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton mnemonicParsing="false" text="Choose file" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="chooseConfigFile" />
+                                             </toggleGroup>
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </GridPane>
+                                    <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                    <GridPane prefHeight="27.0" prefWidth="298.0" GridPane.rowIndex="3">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="76.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="162.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" text="Open..." />
+                                          <MenuButton mnemonicParsing="false" text="Choose from history" GridPane.columnIndex="1" />
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets left="60.0" />
+                                       </GridPane.margin>
+                                    </GridPane>
+                                    <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Choosen config file">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <ScrollBar maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="280.0" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                          <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="280.0" style="-fx-border-color: pink;" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                       </children>
+                                    </GridPane>
+                                    <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="84.0" text="Submit" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" color="#da9191" />
+                                       </effect>
+                                    </Button>
+                                    <Separator prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </GridPane>
+                              <GridPane prefHeight="368.0" prefWidth="598.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="300.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="0.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="117.0" minHeight="-Infinity" prefHeight="79.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="142.0" minHeight="-Infinity" prefHeight="109.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="103.0" minHeight="0.0" prefHeight="18.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="128.0" minHeight="0.0" prefHeight="89.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="180.0" minHeight="25.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="23.0" minHeight="-Infinity" prefHeight="1.0" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="Modifying options">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane GridPane.rowIndex="2">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <RadioButton mnemonicParsing="false" prefHeight="28.0" prefWidth="227.0" text="Change choosen sheet">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="chooseConfigFile11" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton mnemonicParsing="false" text="Create new sheet" GridPane.rowIndex="1">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="chooseModifyingOption" />
+                                             </toggleGroup>
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </GridPane>
+                                    <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                    <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="84.0" text="Submit" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" color="#da9191" />
+                                       </effect>
+                                    </Button>
+                                    <Separator prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+                                    <GridPane prefHeight="64.0" prefWidth="236.0" GridPane.rowIndex="5">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="232.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Name...">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <GridPane.margin>
+                                                <Insets top="16.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <MenuButton mnemonicParsing="false" prefHeight="32.0" prefWidth="128.0" text="Option" GridPane.rowIndex="1">
+                                             <items>
+                                                <RadioMenuItem mnemonicParsing="false" text="last in order">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="chooseSheetOption11" />
+                                                   </toggleGroup>
+                                                </RadioMenuItem>
+                                                <RadioMenuItem mnemonicParsing="false" text="first in order" />
+                                                <RadioMenuItem mnemonicParsing="false" text="last modified" />
+                                             </items>
+                                          </MenuButton>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets left="120.0" />
+                                       </GridPane.margin>
+                                    </GridPane>
+                                    <RadioButton mnemonicParsing="false" text="Specify name" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="chooseNameOption" />
+                                       </toggleGroup>
+                                       <GridPane.margin>
+                                          <Insets left="60.0" />
+                                       </GridPane.margin>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="Optional" GridPane.rowIndex="4">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="chooseNameOption1" />
+                                       </toggleGroup>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="60.0" />
+                                       </GridPane.margin>
+                                    </RadioButton>
+                                    <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <children>
+                                          <Label text="Sheet name">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <TextField maxWidth="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="280.0" style="-fx-border-color: pink;" />
+                                          <ScrollBar maxWidth="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="280.0" />
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets right="50.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <children>
+                                          <Label text="Enter name...">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets top="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <TextField maxWidth="-Infinity" prefHeight="32.0" prefWidth="280.0" style="-fx-border-color: pink;" />
+                                          <ScrollBar maxWidth="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="280.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <children>
+                                          <Label text="Choosen option">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <TextField maxWidth="-Infinity" prefHeight="32.0" prefWidth="280.0" style="-fx-border-color: pink;" />
+                                          <ScrollBar maxWidth="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="280.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </GridPane>
+                              <AnchorPane prefHeight="55.0" prefWidth="598.0">
+                                 <children>
+                                    <Button layoutX="14.0" layoutY="28.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="136.0" text="Run">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow color="#da9191" spread="0.6" />
+                                       </effect>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="2.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="874.0" prefWidth="600.0" style="-fx-border-color: green;">
+                           <children>
+                              <GridPane prefHeight="270.0" prefWidth="595.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="0.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="99.0" minHeight="-Infinity" prefHeight="61.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="99.0" minHeight="-Infinity" prefHeight="47.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="100.0" minHeight="-Infinity" prefHeight="44.0" />
+                                    <RowConstraints prefHeight="1.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="Excel document">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane GridPane.rowIndex="2">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <RadioButton mnemonicParsing="false" text="By default">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="chooseConfigFile" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton mnemonicParsing="false" text="Choose document" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="chooseConfigFile1" />
+                                             </toggleGroup>
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </GridPane>
+                                    <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                    <GridPane prefHeight="27.0" prefWidth="298.0" GridPane.rowIndex="3">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="76.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="162.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button mnemonicParsing="false" text="Open..." />
+                                          <MenuButton mnemonicParsing="false" text="Choose from history" GridPane.columnIndex="1" />
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets left="60.0" />
+                                       </GridPane.margin>
+                                    </GridPane>
+                                    <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="84.0" text="Submit" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" color="#da9191" />
+                                       </effect>
+                                    </Button>
+                                    <Separator prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                                    <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <children>
+                                          <Label text="Choosen document">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <TextField maxWidth="-Infinity" prefHeight="32.0" prefWidth="280.0" style="-fx-border-color: pink;" />
+                                          <ScrollBar maxWidth="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="280.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </GridPane>
+                              <GridPane prefHeight="290.0" prefWidth="596.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="0.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="99.0" minHeight="-Infinity" prefHeight="61.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="99.0" minHeight="-Infinity" prefHeight="14.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="99.0" minHeight="41.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="169.0" minHeight="25.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="21.0" minHeight="-Infinity" prefHeight="0.0" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="Excel sheet">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane GridPane.rowIndex="2">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <RadioButton mnemonicParsing="false" prefHeight="28.0" prefWidth="122.0" text="By choose...">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="chooseConfigFile1" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <MenuButton mnemonicParsing="false" text="Choose sheet" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="40.0" />
+                                             </GridPane.margin>
+                                          </MenuButton>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </GridPane>
+                                    <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                    <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="84.0" text="Submit" GridPane.rowIndex="5">
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                       <effect>
+                                          <DropShadow blurType="ONE_PASS_BOX" color="#da9191" height="25.555" radius="13.41625" width="30.11" />
+                                       </effect>
+                                    </Button>
+                                    <Separator prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+                                    <RadioButton mnemonicParsing="false" text="Optional" GridPane.rowIndex="3">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="chooseSheet" />
+                                       </toggleGroup>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </RadioButton>
+                                    <GridPane prefHeight="64.0" prefWidth="236.0" GridPane.rowIndex="4">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="232.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Sheet...">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <MenuButton mnemonicParsing="false" prefHeight="32.0" prefWidth="128.0" text="Option" GridPane.rowIndex="1">
+                                             <items>
+                                                <RadioMenuItem mnemonicParsing="false" text="last in order">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="chooseSheetOption1" />
+                                                   </toggleGroup>
+                                                </RadioMenuItem>
+                                                <RadioMenuItem mnemonicParsing="false" text="first in order" />
+                                                <RadioMenuItem mnemonicParsing="false" text="last modified" />
+                                             </items>
+                                          </MenuButton>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets left="60.0" />
+                                       </GridPane.margin>
+                                    </GridPane>
+                                    <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <children>
+                                          <Label text="Choosen sheet">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <TextField maxWidth="-Infinity" prefHeight="32.0" prefWidth="280.0" style="-fx-border-color: pink;" />
+                                          <ScrollBar maxWidth="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="280.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <children>
+                                          <Label text="Choosen option">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <TextField maxWidth="-Infinity" prefHeight="32.0" prefWidth="280.0" style="-fx-border-color: pink;" />
+                                          <ScrollBar maxWidth="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="280.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </GridPane>
+                           </children>
+                           <padding>
+                              <Insets right="2.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab closable="false" text="Edit diapason">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
